@@ -1,0 +1,9 @@
+{
+	"id": "2GsnynHY6o47kzd",
+	"json": "{\"id\":\"2GsnynHY6o47kzd\",\"url\":\"https://www.drsimi.cl/medicamento/salud-femenina?page=1\",\"loadedUrl\":\"https://www.drsimi.cl/medicamento/salud-femenina?page=1\",\"uniqueKey\":\"https://www.drsimi.cl/medicamento/salud-femenina?page=1\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"__crawlee\":{\"state\":4}},\"handledAt\":\"2024-12-08T18:19:08.144Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.drsimi.cl/medicamento/salud-femenina?page=1",
+	"url": "https://www.drsimi.cl/medicamento/salud-femenina?page=1"
+}

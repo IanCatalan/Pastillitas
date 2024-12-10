@@ -1,0 +1,9 @@
+{
+	"id": "ecilOtevnhsCpi6",
+	"json": "{\"id\":\"ecilOtevnhsCpi6\",\"url\":\"https://www.drsimi.cl/anovulatorio-21-comprimidos-recubiertos/p\",\"loadedUrl\":\"https://www.drsimi.cl/anovulatorio-21-comprimidos-recubiertos/p\",\"uniqueKey\":\"https://www.drsimi.cl/anovulatorio-21-comprimidos-recubiertos/p\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"label\":\"DETALLE\",\"__crawlee\":{\"enqueueStrategy\":\"same-hostname\",\"state\":4}},\"handledAt\":\"2024-12-08T18:21:14.836Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "https://www.drsimi.cl/anovulatorio-21-comprimidos-recubiertos/p",
+	"url": "https://www.drsimi.cl/anovulatorio-21-comprimidos-recubiertos/p"
+}
