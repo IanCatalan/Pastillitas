@@ -1,0 +1,462 @@
+{
+  "usableSessionsCount": 16,
+  "retiredSessionsCount": 1,
+  "sessions": [
+    {
+      "id": "session_gId8RoN5jb",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:19.161Z",
+      "createdAt": "2024-12-10T01:48:19.161Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_XWymGD4HQi",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": [
+          {
+            "key": "_gcl_au",
+            "value": "1.1.1155244590.1733795300",
+            "expires": "2025-03-10T01:48:20.000Z",
+            "domain": "cruzverde.cl",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-12-10T01:48:24.009Z",
+            "lastAccessed": "2024-12-10T01:48:50.087Z"
+          },
+          {
+            "key": "_fbp",
+            "value": "fb.1.1733795300790.6087919661",
+            "expires": "2025-03-10T01:48:37.000Z",
+            "domain": "cruzverde.cl",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-12-10T01:48:24.013Z",
+            "lastAccessed": "2024-12-10T01:48:50.087Z"
+          },
+          {
+            "key": "_ga",
+            "value": "GA1.1.935937840.1733795301",
+            "expires": "2026-01-14T01:48:21.747Z",
+            "domain": "cruzverde.cl",
+            "path": "/",
+            "secure": true,
+            "hostOnly": false,
+            "creation": "2024-12-10T01:48:24.014Z",
+            "lastAccessed": "2024-12-10T01:48:50.088Z"
+          },
+          {
+            "key": "_rlid",
+            "value": "81d40b03-8c40-4909-90db-cc9faa7f7175",
+            "expires": "2025-06-08T01:48:36.000Z",
+            "domain": "www.cruzverde.cl",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-12-10T01:48:24.014Z",
+            "lastAccessed": "2024-12-10T01:48:50.087Z"
+          },
+          {
+            "key": "_hjSession_1614665",
+            "value": "eyJpZCI6IjE5OTQzOTY2LTU0ODUtNDI5YS1iOWIzLTA1OTgwODBjNDcxMSIsImMiOjE3MzM3OTUzMDExOTIsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MX0=",
+            "expires": "2024-12-10T02:18:21.000Z",
+            "domain": "cruzverde.cl",
+            "path": "/",
+            "secure": true,
+            "hostOnly": false,
+            "creation": "2024-12-10T01:48:24.014Z",
+            "lastAccessed": "2024-12-10T01:48:50.087Z"
+          },
+          {
+            "key": "_tt_enable_cookie",
+            "value": "1",
+            "expires": "2026-01-04T01:48:36.000Z",
+            "domain": "cruzverde.cl",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-12-10T01:48:24.014Z",
+            "lastAccessed": "2024-12-10T01:48:50.087Z"
+          },
+          {
+            "key": "_ttp",
+            "value": "HzS5g664EyP4j7SKNkJUgiaMQX5.tt.1",
+            "expires": "2026-01-04T01:48:36.000Z",
+            "domain": "cruzverde.cl",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-12-10T01:48:24.014Z",
+            "lastAccessed": "2024-12-10T01:48:50.087Z"
+          },
+          {
+            "key": "_ga_CVCL",
+            "value": "GS1.1.1733795300.1.1.1733795323.0.0.1344658503",
+            "expires": "2026-01-14T01:48:43.824Z",
+            "domain": "cruzverde.cl",
+            "path": "/",
+            "secure": true,
+            "hostOnly": false,
+            "creation": "2024-12-10T01:48:24.014Z",
+            "lastAccessed": "2024-12-10T01:48:50.088Z"
+          },
+          {
+            "key": "_hjSessionUser_1614665",
+            "value": "eyJpZCI6ImQ2NmM2YzUyLTFlN2ItNWZmMi04YmY0LWU1YTg4MTJhMjcxNyIsImNyZWF0ZWQiOjE3MzM3OTUzMDExOTEsImV4aXN0aW5nIjp0cnVlfQ==",
+            "expires": "2025-12-10T01:48:36.000Z",
+            "domain": "cruzverde.cl",
+            "path": "/",
+            "secure": true,
+            "hostOnly": false,
+            "creation": "2024-12-10T01:48:24.014Z",
+            "lastAccessed": "2024-12-10T01:48:50.087Z"
+          },
+          {
+            "key": "_ga_GMKXQPNSW5",
+            "value": "GS1.1.1733795302.1.1.1733795325.37.0.2044161487",
+            "expires": "2026-01-14T01:48:45.988Z",
+            "domain": "cruzverde.cl",
+            "path": "/",
+            "secure": true,
+            "hostOnly": false,
+            "creation": "2024-12-10T01:48:24.015Z",
+            "lastAccessed": "2024-12-10T01:48:50.088Z"
+          },
+          {
+            "key": "_rl_sg",
+            "value": "841209%2C893877%2C899489%2C1086501%2C1161913%2C1161915%2C1161939%2C1161941%2C1222613%2C841211%2C560%2C563%2C569%2C624",
+            "expires": "2025-06-08T01:48:37.000Z",
+            "domain": "www.cruzverde.cl",
+            "path": "/",
+            "hostOnly": false,
+            "creation": "2024-12-10T01:48:24.015Z",
+            "lastAccessed": "2024-12-10T01:48:50.088Z"
+          }
+        ]
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:19.165Z",
+      "createdAt": "2024-12-10T01:48:19.165Z",
+      "usageCount": 29,
+      "maxUsageCount": 50,
+      "errorScore": 6
+    },
+    {
+      "id": "session_6RdhqPokDr",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:24.301Z",
+      "createdAt": "2024-12-10T01:48:24.301Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_EVsaGjFSjm",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:26.640Z",
+      "createdAt": "2024-12-10T01:48:26.640Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_RvkpK7dZPC",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:28.353Z",
+      "createdAt": "2024-12-10T01:48:28.353Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_idJeLUlWdb",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:29.178Z",
+      "createdAt": "2024-12-10T01:48:29.178Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_6GXm8Bp2pI",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:29.180Z",
+      "createdAt": "2024-12-10T01:48:29.180Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_ooHLHaToTx",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:31.050Z",
+      "createdAt": "2024-12-10T01:48:31.050Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_bzJMbcgLsY",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:31.054Z",
+      "createdAt": "2024-12-10T01:48:31.054Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_fPreImsA8M",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:31.363Z",
+      "createdAt": "2024-12-10T01:48:31.363Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_WZbfWrvQTO",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:33.326Z",
+      "createdAt": "2024-12-10T01:48:33.326Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_oU2f7wpwFx",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:33.573Z",
+      "createdAt": "2024-12-10T01:48:33.573Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_o5dLLunkhh",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:33.639Z",
+      "createdAt": "2024-12-10T01:48:33.639Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_yd5k5VP05S",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:35.506Z",
+      "createdAt": "2024-12-10T01:48:35.506Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_VhrOCiDh7B",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:35.663Z",
+      "createdAt": "2024-12-10T01:48:35.663Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_yrANned4t9",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:43.150Z",
+      "createdAt": "2024-12-10T01:48:43.150Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    },
+    {
+      "id": "session_zaSf0PCnQu",
+      "cookieJar": {
+        "version": "tough-cookie@5.0.0",
+        "storeType": "MemoryCookieStore",
+        "rejectPublicSuffixes": true,
+        "enableLooseMode": false,
+        "allowSpecialUseDomain": true,
+        "prefixSecurity": "silent",
+        "cookies": []
+      },
+      "userData": {},
+      "maxErrorScore": 3,
+      "errorScoreDecrement": 0.5,
+      "expiresAt": "2024-12-10T02:38:49.881Z",
+      "createdAt": "2024-12-10T01:48:49.881Z",
+      "usageCount": 0,
+      "maxUsageCount": 50,
+      "errorScore": 0
+    }
+  ]
+}
