@@ -1,0 +1,53 @@
+{
+  "requestsFinished": 1185,
+  "requestsFailed": 10,
+  "requestsRetries": 10,
+  "requestsFailedPerMinute": 0,
+  "requestsFinishedPerMinute": 43,
+  "requestMinDurationMillis": 692,
+  "requestMaxDurationMillis": 39006,
+  "requestTotalFailedDurationMillis": 325347,
+  "requestTotalFinishedDurationMillis": 9835724,
+  "crawlerStartedAt": "2024-12-12T20:20:04.346Z",
+  "crawlerFinishedAt": "2024-12-12T20:47:31.927Z",
+  "statsPersistedAt": "2024-12-12T20:47:31.927Z",
+  "crawlerRuntimeMillis": 1649746,
+  "crawlerLastStartTimestamp": 1734034802181,
+  "requestRetryHistogram": [
+    1185,
+    null,
+    null,
+    10
+  ],
+  "statsId": 0,
+  "requestAvgFailedDurationMillis": 32535,
+  "requestAvgFinishedDurationMillis": 8300,
+  "requestTotalDurationMillis": 10161071,
+  "requestsTotal": 1195,
+  "requestsWithStatusCode": {
+    "200": 1189,
+    "404": 36
+  },
+  "errors": {
+    "C:\\Users\\ianca\\Desktop\\Proyectos personales\\Pastillitas\\scrapper.mjs:9:93": {
+      "missing error code": {
+        "TimeoutError": {
+          "locator.textContent: Timeout 30000ms exceeded.": {
+            "count": 10
+          }
+        }
+      }
+    }
+  },
+  "retryErrors": {
+    "C:\\Users\\ianca\\Desktop\\Proyectos personales\\Pastillitas\\scrapper.mjs:9:93": {
+      "missing error code": {
+        "TimeoutError": {
+          "locator.textContent: Timeout 30000ms exceeded.": {
+            "count": 30
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,10 +12,12 @@
   "dependencies": {
     "cheerio": "^1.0.0",
     "crawlee": "^3.12.1",
+    "pg": "^8.13.1",
     "playwright": "^1.49.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "robots-parser": "^3.0.1"
+    "robots-parser": "^3.0.1",
+    "sequelize": "^6.37.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

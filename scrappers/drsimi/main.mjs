@@ -14,4 +14,4 @@ const crawler = new PlaywrightCrawler({
   maxConcurrency: 3,
 });
 
-await crawler.run(["https://www.drsimi.cl/medicamento/salud-femenina?page=1"]);
+await crawler.run(["https://www.drsimi.cl/sitemap/product-0.xml"]);
