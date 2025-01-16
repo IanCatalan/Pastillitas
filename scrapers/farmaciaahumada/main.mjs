@@ -1,4 +1,5 @@
 import { PlaywrightCrawler, Sitemap } from 'crawlee';
+import saveScrapedData from '../data/saveData.js';
 const crawler = new PlaywrightCrawler();
 
 
@@ -12,6 +13,7 @@ crawler.router.addDefaultHandler(async ({ request, log, page}) => {
   // const principioActivo= principioActivoWithBlankSpaces.trim();
   const url = request.url;
   const tienda = 'Farmacia Ahumada';
+  await saveScrapedData({ titleClean, price, url, tienda });
   console.log(titleClean, price, url, tienda);
 });
 

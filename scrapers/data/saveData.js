@@ -18,12 +18,12 @@ async function saveScrapedData({ titleClean, price, url, tienda }) {
   
       // Insertar el precio asociado a la tienda y al producto
       await Price.create({
-        price: parseFloat(price.replace(",", ".")), // Convertir a número
+        price: price.replace(/\./g, ""), 
         url,
         productId: product.id,
         storeId: store.id,
-      });
-  
+    });
+    
       console.log(`Producto ${titleClean} de ${tienda} guardado en la base de datos.`);
     } catch (error) {
       console.error("Error al guardar los datos:", error);

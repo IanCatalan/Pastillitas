@@ -1,4 +1,5 @@
 import { PlaywrightCrawler, Sitemap } from 'crawlee';
+import saveScrapedData from '../data/saveData.js';
 const crawler = new PlaywrightCrawler();
 
 
@@ -10,6 +11,7 @@ crawler.router.addDefaultHandler(async ({ request, log, page}) => {
   const price = priceInArray[0].replace(/.*\$\s*/, "").trim();
   const url = request.url;
   const tienda = 'Dr Simi';
+  await saveScrapedData({ titleClean, price, url, tienda });
   console.log(titleClean, price, url, tienda)
 });
 
