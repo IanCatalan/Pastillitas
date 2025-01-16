@@ -1,18 +1,21 @@
-import { PlaywrightCrawler, log } from "crawlee";
-import { router } from "./routes.mjs";
-import crawleroptions from "./crawleroptions.js";
+import { PlaywrightCrawler, Sitemap } from 'crawlee';
+const crawler = new PlaywrightCrawler();
 
-// This is better set with CRAWLEE_LOG_LEVEL env var
-// or a configuration option. This is just for show 😈
-log.setLevel(log.LEVELS.DEBUG);
 
-log.debug("Iniciando el crawleer.");
+crawler.router.addDefaultHandler(async ({ request, log, page}) => {
+  log.info(request.url);
+  const title =
+  (await page.locator("h1.text-28").textContent()) || "Sin título";
 
-const crawler = new PlaywrightCrawler({
-  ...crawleroptions,
-  requestHandler: router,
-  maxConcurrency: 3,
-  headless: true
+  const price = await page.locator("ml-price-tag").textContent();
+  const url = request.url;
+  const tienda = 'Cruz Verde';
+  console.log(title, price, url, tienda);
 });
 
-await crawler.run(["https://www.cruzverde.cl/anticonceptivos/anticonceptivos-orales"]);
+console.log('Loading sitemap');
+const {urls}  = await Sitemap.load('https://www.cruzverde.cl/sitemap_0-product.xml'); //hay que agregar hasta el 3
+await crawler.addRequests(urls);
+
+// Run the crawler
+await crawler.run();

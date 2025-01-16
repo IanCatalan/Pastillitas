@@ -1,17 +1,19 @@
-import { PlaywrightCrawler, log } from "crawlee";
-import { router } from "./routes.mjs";
-import crawleroptions from "./crawleroptions.js";
+import { PlaywrightCrawler, Sitemap } from 'crawlee';
+const crawler = new PlaywrightCrawler();
 
-// This is better set with CRAWLEE_LOG_LEVEL env var
-// or a configuration option. This is just for show 😈
-log.setLevel(log.LEVELS.DEBUG);
 
-log.debug("Iniciando el crawleer.");
-
-const crawler = new PlaywrightCrawler({
-  ...crawleroptions,
-  requestHandler: router,
-  maxConcurrency: 3,
+crawler.router.addDefaultHandler(async ({ request, log, page}) => {
+  log.info(request.url);
+  const title = await page.locator('span.vtex-store-components-3-x-productBrand--quickview').textContent();
+  const price = await page.locator('.vtex-flex-layout-0-x-flexRowContent--preciosSimi').allTextContents();
+  const url = request.url;
+  const tienda = 'Dr Simi';
+  console.log(price)
 });
 
-await crawler.run(["https://www.drsimi.cl/sitemap/product-0.xml"]);
+console.log('Loading sitemap');
+const {urls}  = await Sitemap.load('https://www.drsimi.cl/sitemap/product-0.xml');
+await crawler.addRequests(urls);
+
+// Run the crawler
+await crawler.run();

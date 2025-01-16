@@ -7,6 +7,11 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+scrappers/cruzverde/storage
+scrappers/drsimi/storage
+scrappers/farmaciasahumada/storage
+scrappers/salcobrand/storage
+
 scrapper/storage
 .env
 node_modules
