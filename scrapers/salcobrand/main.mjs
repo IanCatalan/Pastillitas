@@ -1,4 +1,5 @@
 import { PlaywrightCrawler, Sitemap } from 'crawlee';
+import { saveScrapedData } from '../data/saveData.js';
 const crawler = new PlaywrightCrawler();
 
 
@@ -12,6 +13,7 @@ crawler.router.addDefaultHandler(async ({ request, log, page}) => {
   // const principioActivoWithBlankSpaces = await page.locator('tr').nth(0).textContent();
   // const principioActivo= principioActivoWithBlankSpaces.trim();
   const tienda = 'Salcobrand';
+  await saveScrapedData({ titleClean, price: priceActual, url, tienda });
   console.log(titleClean, priceActual, url, tienda);
 });
 

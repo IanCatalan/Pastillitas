@@ -1,7 +1,7 @@
 "use strict";
-const { Model } = require("sequelize");
+import { Model } from 'sequelize';
 
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
   class Product extends Model {
     static associate(models) {
       // Un producto puede tener muchas entradas en Price
