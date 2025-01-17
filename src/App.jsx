@@ -1,13 +1,11 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import ProductList from "./components/ProductList";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <div>
+      <h1>Buscador de Medicamentos</h1>
+      <ProductList />
+    </div>
   );
 }
 

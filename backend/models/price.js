@@ -1,7 +1,7 @@
 "use strict";
 import { Model } from 'sequelize';
 
-export default  (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
   class Price extends Model {
     /**
      * Helper method for defining associations.

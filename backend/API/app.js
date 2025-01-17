@@ -1,7 +1,8 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import { sequelize } from "../models/index.js"; // Asegúrate de importar tu conexión a la base de datos
+import db from "../models/index.js"; 
+const { sequelize } = db; // Obtiene la instancia de Sequelize
 
 import productRoutes from "./routes/products.js"; // Importamos las rutas
 

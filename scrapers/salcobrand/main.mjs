@@ -1,5 +1,5 @@
 import { PlaywrightCrawler, Sitemap } from 'crawlee';
-import { saveScrapedData } from '../data/saveData.js';
+import saveScrapedData from '../data/saveData.js';
 const crawler = new PlaywrightCrawler();
 
 
@@ -18,7 +18,7 @@ crawler.router.addDefaultHandler(async ({ request, log, page}) => {
 });
 
 console.log('Loading sitemap');
-const {urls}  = await Sitemap.load('https://salcobrand.cl/sitemap2.xml'); // Hay que agregar hasta sitemap 11
+const {urls}  = await Sitemap.load(['https://salcobrand.cl/sitemap2.xml', 'https://salcobrand.cl/sitemap3.xml','https://salcobrand.cl/sitemap4.xml','https://salcobrand.cl/sitemap5.xml','https://salcobrand.cl/sitemap6.xml','https://salcobrand.cl/sitemap7.xml','https://salcobrand.cl/sitemap8.xml','https://salcobrand.cl/sitemap9.xml','https://salcobrand.cl/sitemap10.xml','https://salcobrand.cl/sitemap11.xml'] ); // Hay que agregar hasta sitemap 11
 await crawler.addRequests(urls);
 
 // Run the crawler

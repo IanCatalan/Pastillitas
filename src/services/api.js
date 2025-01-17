@@ -1,17 +1,23 @@
-const API_URL = "http://localhost:4000/api/products";
+const API_URL = "http://localhost:3000/api/products"; // Ajusta según tu backend
 
-/**
- * Obtiene productos desde la API según un término de búsqueda.
- * @param {string} query - Medicamento a buscar.
- * @returns {Promise<Array>} - Lista de productos encontrados.
- */
-export async function fetchProducts(query) {
+export const fetchAllProducts = async () => {
   try {
-    const response = await fetch(`${API_URL}?query=${query}`);
-    if (!response.ok) throw new Error("Error al obtener los datos");
+    const response = await fetch(API_URL);
+    if (!response.ok) throw new Error("Error obteniendo productos");
     return await response.json();
   } catch (error) {
-    console.error("Error en fetchProducts:", error);
+    console.error("Error en fetchAllProducts:", error);
     return [];
   }
-}
+};
+
+export const searchProducts = async (query) => {
+  try {
+    const response = await fetch(`${API_URL}/buscar?query=${query}`);
+    if (!response.ok) throw new Error("Error buscando productos");
+    return await response.json();
+  } catch (error) {
+    console.error("Error en searchProducts:", error);
+    return [];
+  }
+};
