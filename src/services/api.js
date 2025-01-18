@@ -1,23 +1,13 @@
-const API_URL = "http://localhost:3000/api/products"; // Ajusta según tu backend
+const API_URL = "http://localhost:3000/api/productos";
 
-export const fetchAllProducts = async () => {
-  try {
-    const response = await fetch(API_URL);
-    if (!response.ok) throw new Error("Error obteniendo productos");
-    return await response.json();
-  } catch (error) {
-    console.error("Error en fetchAllProducts:", error);
-    return [];
-  }
+export const fetchProducts = async (params) => {
+  const query = new URLSearchParams(params).toString();
+  const response = await fetch(`${API_URL}?${query}`);
+  return response.json();
 };
 
-export const searchProducts = async (query) => {
-  try {
-    const response = await fetch(`${API_URL}/buscar?query=${query}`);
-    if (!response.ok) throw new Error("Error buscando productos");
-    return await response.json();
-  } catch (error) {
-    console.error("Error en searchProducts:", error);
-    return [];
-  }
+export const searchProducts = async (query, params) => {
+  const queryString = new URLSearchParams({ query, ...params }).toString();
+  const response = await fetch(`${API_URL}/buscar?${queryString}`);
+  return response.json();
 };

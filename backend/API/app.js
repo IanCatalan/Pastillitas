@@ -15,7 +15,7 @@ app.use(cors()); // Permite peticiones desde el frontend
 app.use(express.json()); // Permite recibir JSON en las peticiones
 
 // 🔹 Rutas
-app.use("/api/products", productRoutes);
+app.use("/api/productos", productRoutes);
 
 // 🔹 Ruta de prueba
 app.get("/", (req, res) => {

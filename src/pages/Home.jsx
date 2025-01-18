@@ -1,17 +1,20 @@
-import { useFetchProducts } from "../hooks/useFetchProducts";
+import { useProducts } from "../hooks/useProducts.js";
 import SearchBar from "../components/SearchBar";
+import Filters from "../components/Filters";
 import ProductList from "../components/ProductList";
+import Pagination from "../components/Pagination";
 
-function Home() {
-  const { products, getProducts } = useFetchProducts(); // Usamos el hook
-
+const Home = () => {
+  const { products, totalPages, loading, query, setQuery, filters, setFilters } = useProducts();
   return (
-    <div>
-      <h1>Comparador de Precios de Medicamentos</h1>
-      <SearchBar onSearch={getProducts} />
-      <ProductList products={products} />
+    <div className="home">
+      <h1>Comparador de Medicamentos</h1>
+      <SearchBar setQuery={setQuery} />
+      <Filters filters={filters} setFilters={setFilters} />
+      <ProductList products={products} loading={loading} />
+      <Pagination totalPages={totalPages} filters={filters} setFilters={setFilters} />
     </div>
   );
-}
+};
 
 export default Home;
