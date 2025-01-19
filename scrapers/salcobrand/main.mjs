@@ -3,7 +3,7 @@ import saveScrapedData from '../data/saveData.js';
 const crawler = new PlaywrightCrawler();
 
 
-crawler.router.addDefaultHandler(async ({ request, log, page}) => {
+export async function scraperSalcobrand() {crawler.router.addDefaultHandler(async ({ request, log, page}) => {
   log.info(request.url);
   const title = (await page.locator("h1.product_name_pdp").textContent()) || "Sin título";
   const titleClean = title.trim();
@@ -23,3 +23,4 @@ await crawler.addRequests(urls);
 
 // Run the crawler
 await crawler.run();
+}

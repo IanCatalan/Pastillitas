@@ -8,10 +8,9 @@ crawler.router.addDefaultHandler(async ({ request, log, page}) => {
   const title =(await page.locator("h1.text-28").textContent()) || "Sin título";
   const titleClean = title.trim();
   const price = await page.locator(".line-through", { hasText: 'Normal' }).textContent();
-  const priceClean=  price.replace(/[^0-9,.]/g, "")
   const url = request.url;
   const tienda = 'Cruz Verde';
-  await saveScrapedData({ titleClean, price: priceClean, url, tienda });
+  await saveScrapedData({ titleClean, price, url, tienda });
   console.log(titleClean, priceClean, url, tienda);
 });
 

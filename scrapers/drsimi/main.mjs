@@ -3,7 +3,8 @@ import saveScrapedData from '../data/saveData.js';
 const crawler = new PlaywrightCrawler();
 
 
-crawler.router.addDefaultHandler(async ({ request, log, page}) => {
+export async function scraperDrSimi() {
+  crawler.router.addDefaultHandler(async ({ request, log, page}) => {
   log.info(request.url);
   const title = await page.locator('span.vtex-store-components-3-x-productBrand--quickview').textContent();
   const titleClean = title.trim();
@@ -21,3 +22,4 @@ await crawler.addRequests(urls);
 
 // Run the crawler
 await crawler.run();
+}
