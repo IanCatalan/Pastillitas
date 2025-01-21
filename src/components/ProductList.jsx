@@ -1,3 +1,4 @@
+import styles from "./ProductList.module.css";
 const ProductList = ({ products, loading }) => {
   if (loading) return <p>Cargando...</p>;
 
@@ -6,13 +7,26 @@ const ProductList = ({ products, loading }) => {
   }
 
   return (
-    <div className="product-list">
+    <div className={`product-list ${styles.list}`}>
       {products.map((p) => (
-        <div key={p.id} className="product-item">
-          <h3>{p.name}</h3>
-          <p>Precio: ${p.Prices?.[0]?.price || "N/A"}</p>
-          <p>Tienda: {p.Prices?.[0]?.Store?.name || "N/A"}</p>
-          <p>Link : {p.Prices?.[0]?.url ? <a href={p.Prices[0].url} target="_blank" rel="noopener noreferrer">Ver producto</a> : 'No disponible'}</p>
+        <div key={p.id} className={`product-item ${styles.listItem}`}>
+          <h3 className={styles.itemTitle}>{p.name}</h3>
+          <p className={styles.itemPrice}>Precio: ${p.Prices?.[0]?.price || "N/A"}</p>
+          <p className={styles.itemStore}>Tienda: {p.Prices?.[0]?.Store?.name || "N/A"}</p>
+          <p className={styles.itemLink}>
+            {" "}
+            {p.Prices?.[0]?.url ? (
+              <a
+                href={p.Prices[0].url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver producto
+              </a>
+            ) : (
+              "No disponible"
+            )}
+          </p>
         </div>
       ))}
     </div>

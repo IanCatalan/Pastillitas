@@ -1,0 +1,31 @@
+.pagination{
+    text-align: center;
+    justify-content: center;
+}
+.buttonPrev{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    border-color: var(--accent-color);
+    border-radius: 15%;
+    border-width: 2.5px;
+    color: var(--main-color);
+    height: 3rem;
+    width: 5rem;
+    font-size: 1rem;
+}
+.buttonNext{
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    margin-left: 1.5rem;
+    border-color: var(--accent-color);
+    border-radius: 15%;
+    border-width: 2.5px;
+    color: var(--main-color);
+    height: 3rem;
+    width: 5rem;
+    font-size: 1rem;
+}
+.pageNumber{
+    color: var(--main-color);
+}

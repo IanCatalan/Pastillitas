@@ -1,0 +1,21 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1rem 2rem 2rem 1rem;
+    font-size: 0.8rem;
+}
+.input{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--accent-color);
+    margin-right: 0rem;
+    font-weight: 300;
+}
+.button{
+    height:3rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--main-color);
+}

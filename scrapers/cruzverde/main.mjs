@@ -8,14 +8,14 @@ crawler.router.addDefaultHandler(async ({ request, log, page}) => {
   const title =(await page.locator("h1.text-28").textContent()) || "Sin título";
   const titleClean = title.trim();
   const price = await page.locator(".line-through", { hasText: 'Normal' }).textContent();
+  const priceActual = price.replace(/[^0-9,.]/g).trim();
   const url = request.url;
   const tienda = 'Cruz Verde';
-  await saveScrapedData({ titleClean, price, url, tienda });
-  console.log(titleClean, priceClean, url, tienda);
+  await saveScrapedData({ titleClean, price: priceActual, url, tienda });
 });
 
 console.log('Loading sitemap');
-const {urls}  = await Sitemap.load('[https://www.cruzverde.cl/sitemap_0-product.xml, https://www.cruzverde.cl/sitemap_1-product.xml, https://www.cruzverde.cl/sitemap_2-product.xml, https://www.cruzverde.cl/sitemap_3-product.xml]'); //hay que agregar hasta el 3
+const {urls}  = await Sitemap.load(['https://www.cruzverde.cl/sitemap_0-product.xml','https://www.cruzverde.cl/sitemap_1-product.xml','https://www.cruzverde.cl/sitemap_3-product.xml']); //hay que agregar hasta el 3
 await crawler.addRequests(urls);
 
 // Run the crawler

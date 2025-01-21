@@ -1,0 +1,35 @@
+.filters{
+    margin: 0rem 0rem 1.5rem 1.5rem;
+}
+.selectRelevance{
+    height: 2.2rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    border-color: var(--accent-color);
+    color: var(--main-color);
+}
+.selectOrder{
+    height: 2.2rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    border-color: var(--accent-color);
+    color: var(--main-color);
+}
+.inputMin{
+    height: 1.8rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    color: var(--main-color);
+}
+.inputMax{
+    height: 1.8rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    color: var(--main-color);
+}
