@@ -9,8 +9,7 @@ export async function scraperFarmaciaAhumada(){crawler.router.addDefaultHandler(
   const titleClean = title.trim();
   const priceWithBlankSpaces = await page.locator(".prices >.price > span.default-price> span.sales> span.value").textContent();
   const price = priceWithBlankSpaces.trim();
-  // const principioActivoWithBlankSpaces = await page.locator('tr').nth(0).textContent();
-  // const principioActivo= principioActivoWithBlankSpaces.trim();
+
   const url = request.url;
   const tienda = 'Farmacia Ahumada';
   await saveScrapedData({ titleClean, price, url, tienda });
@@ -21,6 +20,5 @@ console.log('Loading sitemap');
 const {urls}  = await Sitemap.load('https://www.farmaciasahumada.cl/sitemap_0-product.xml');
 await crawler.addRequests(urls);
 
-// Run the crawler
 await crawler.run();
 }

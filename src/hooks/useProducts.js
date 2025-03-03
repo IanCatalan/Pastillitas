@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { fetchProducts, searchProducts } from "../services/api.js";
 export const useProducts = () => {
   const [products, setProducts] = useState([]);
-  const [totalPages, setTotalPages] = useState(1);
+  const [totalPages, setTotalPages] = useState();
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("");
   const [filters, setFilters] = useState({

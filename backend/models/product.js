@@ -4,7 +4,6 @@ import { Model } from 'sequelize';
 export default (sequelize, DataTypes) => {
   class Product extends Model {
     static associate(models) {
-      // Un producto puede tener muchas entradas en Price
       Product.hasMany(models.Price, { foreignKey: "productId" });
     }
   }

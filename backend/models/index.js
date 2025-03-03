@@ -6,11 +6,9 @@ import { Sequelize } from 'sequelize';
 import process from 'process';
 import { fileURLToPath, pathToFileURL } from 'url';
 
-// Definir __filename y __dirname correctamente
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Cargar archivo de configuración manualmente
 const configFilePath = path.resolve(__dirname, '../config/config.json');
 const configData = JSON.parse(fs.readFileSync(configFilePath, 'utf8'));
 
@@ -27,7 +25,6 @@ if (config.use_env_variable) {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
-// Leer archivos de modelos en el directorio actual
 const modelFiles = fs
   .readdirSync(__dirname)
   .filter(file => {

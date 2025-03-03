@@ -16,7 +16,6 @@ ul{
 }
 input{
   font-family: "Roboto";
-  border-color: var(--accent-color)!important;
 }
 button{
   cursor: pointer;

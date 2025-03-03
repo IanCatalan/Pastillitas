@@ -20,6 +20,5 @@ console.log('Loading sitemap');
 const {urls}  = await Sitemap.load('https://www.drsimi.cl/sitemap/product-0.xml');
 await crawler.addRequests(urls);
 
-// Run the crawler
 await crawler.run();
 }

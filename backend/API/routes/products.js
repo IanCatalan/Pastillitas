@@ -1,45 +1,36 @@
 import express from "express";
-import { Op } from "sequelize"; // Para consultas en PostgreSQL
-import db from "../../models/index.js"; // Importa los modelos
-import Fuse from "fuse.js"; // Para búsqueda flexible
+import { Op } from "sequelize"; 
+import db from "../../models/index.js"; 
+import Fuse from "fuse.js"; 
 
 const { Product, Price, Store } = db;
 const router = express.Router();
 
-// Configurar Fuse.js para la búsqueda de productos
 let fuse = null;
 
-// Cargar los productos en memoria para la búsqueda con Fuse.js
 async function loadProducts() {
   const products = await Product.findAll({
     include: [{ model: Price, include: [Store] }],
   });
   
-  // Configurar Fuse.js con las opciones de búsqueda
   fuse = new Fuse(products, {
-    keys: ["name"], // Buscar solo en el nombre del producto
-    threshold: 0.3, // Nivel de similitud (0 = exacto, 1 = coincidencias amplias)
-    includeScore: true, // Incluye la puntuación de relevancia
+    keys: ["name"], 
+    threshold: 0.3, 
+    includeScore: true, 
   });
 }
 
-// Cargar los productos al inicio
 loadProducts();
 
-/**
- * GET /api/productos
- * Obtiene todos los productos con paginación y filtros
- */
+
 router.get("/", async (req, res) => {
   try {
     const { orderBy, orderDirection, minPrice, maxPrice, page = 1, limit = 20 } = req.query;
     
-    // Convertir a números
     const pageNumber = parseInt(page, 10);
     const limitNumber = parseInt(limit, 10);
     const offset = (pageNumber - 1) * limitNumber;
 
-    // Filtros de precio
     let priceFilter = {};
     if (minPrice) priceFilter[Op.gte] = parseFloat(minPrice);
     if (maxPrice) priceFilter[Op.lte] = parseFloat(maxPrice);
@@ -67,10 +58,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-/**
- * GET /api/productos/buscar
- * Búsqueda avanzada con Fuse.js y paginación
- */
 router.get("/buscar", async (req, res) => {
   try {
     const { query, orderBy, orderDirection, minPrice, maxPrice, page = 1, limit = 20 } = req.query;
@@ -83,11 +70,9 @@ router.get("/buscar", async (req, res) => {
       await loadProducts();
     }
 
-    // Realizar la búsqueda con Fuse.js
     const result = fuse.search(query);
-    let filteredProducts = result.map((r) => r.item); // Obtener solo los productos
+    let filteredProducts = result.map((r) => r.item); 
 
-    // Aplicar filtros de precio
     if (minPrice || maxPrice) {
       filteredProducts = filteredProducts.filter((p) => {
         const price = p.Prices?.[0]?.price || 0;
@@ -95,7 +80,6 @@ router.get("/buscar", async (req, res) => {
       });
     }
 
-    // Ordenar resultados según relevancia o precio
     if (orderBy === "price") {
       filteredProducts.sort((a, b) => {
         const priceA = a.Prices?.[0]?.price || 0;
@@ -104,7 +88,6 @@ router.get("/buscar", async (req, res) => {
       });
     }
 
-    // Paginación
     const total = filteredProducts.length;
     const totalPages = Math.ceil(total / limit);
     const startIndex = (page - 1) * limit;

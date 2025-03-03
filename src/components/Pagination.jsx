@@ -1,7 +1,7 @@
 import styles from "./Pagination.module.css";
 const Pagination = ({ totalPages, filters, setFilters }) => {
   const changePage = (newPage) => {
-    setFilters((prev) => ({ ...prev, page: newPage }));
+    setFilters((prev) => ({ ...prev, page: newPage, limit: 15 }));	
   };
 
   return (

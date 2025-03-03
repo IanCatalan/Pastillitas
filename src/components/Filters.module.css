@@ -7,7 +7,7 @@
     border-radius: 0.5rem;
     margin-left: 0.5rem;
     text-align: center;
-    border-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
     color: var(--main-color);
 }
 .selectOrder{
@@ -16,7 +16,7 @@
     border-radius: 0.5rem;
     margin-left: 0.5rem;
     text-align: center;
-    border-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
     color: var(--main-color);
 }
 .inputMin{
@@ -24,12 +24,12 @@
     border-radius: 0.5rem;
     margin-left: 0.5rem;
     text-align: center;
-    color: var(--main-color);
+    border: 2px solid var(--accent-color);
 }
 .inputMax{
     height: 1.8rem;
     border-radius: 0.5rem;
     margin-left: 0.5rem;
     text-align: center;
-    color: var(--main-color);
+    border: 2px solid var(--accent-color);
 }

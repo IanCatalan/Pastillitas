@@ -15,8 +15,8 @@ crawler.router.addDefaultHandler(async ({ request, log, page}) => {
 });
 
 console.log('Loading sitemap');
-const {urls}  = await Sitemap.load(['https://www.cruzverde.cl/sitemap_0-product.xml','https://www.cruzverde.cl/sitemap_1-product.xml','https://www.cruzverde.cl/sitemap_3-product.xml']); //hay que agregar hasta el 3
+const {urls}  = await Sitemap.load(['https://www.cruzverde.cl/sitemap_0-product.xml','https://www.cruzverde.cl/sitemap_1-product.xml','https://www.cruzverde.cl/sitemap_3-product.xml']); 
 await crawler.addRequests(urls);
 
-// Run the crawler
+
 await crawler.run();
